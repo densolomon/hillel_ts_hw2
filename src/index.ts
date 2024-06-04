@@ -102,7 +102,7 @@ class Group {
     }
 
     showPerformance(): string[] {
-        const sortedStudents = this._students.toSorted((a: string, b: number) => b.getPerformanceRating() - a.getPerformanceRating());
+        const sortedStudents: string[] = this._students.toSorted((a: string, b: string) => b.getPerformanceRating() - a.getPerformanceRating());
         return sortedStudents;
     }
 
